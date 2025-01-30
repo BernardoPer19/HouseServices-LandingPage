@@ -1,0 +1,39 @@
+---
+// No se necesitan props, solo el código del banner
+const bannerImage =
+  "https://images.pexels.com/photos/286744/pexels-photo-286744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+---
+
+<div
+  class="relative h-[50vh] flex items-center justify-center text-white bg-cover bg-center"
+  style={`background-image: url(${bannerImage}); background-attachment: fixed;`}
+>
+  <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+  <!-- Capa oscura para contraste -->
+  <div
+    data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine"
+    class="relative z-10 text-center"
+  >
+    <h1 class="text-4xl sm:text-5xl font-semibold mb-4">
+      <span
+        class="text-7xl opacity-10 absolute inset-x-0 top-1/4 transform -translate-y-1/4"
+        >❛❛</span
+      >
+      "The only way to do great work is to love what you do."
+      <span
+        class="text-7xl opacity-10 absolute inset-x-0 bottom-1/4 transform translate-y-1/4"
+        >❜❜</span
+      >
+    </h1>
+    <h2 class="text-xl sm:text-2xl mb-4 font-light">
+      "Don't watch the clock; do what it does. Keep going."
+    </h2>
+    <button
+      class="px-6 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-all"
+    >
+      Explore Now
+    </button>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+<main
+  id="Location"
+  class="relative h-[60vh] flex items-center justify-center text-white mt-24 bg-cover bg-center"
+  style="background-image: url('public/Captura de pantalla 2025-01-29 121735.jpg'); background-attachment: fixed;"
+>
+  <div class="absolute inset-0 bg-blue-950 bg-opacity-70"></div>
+  <!-- Cambié el fondo a un azul oscuro con algo de opacidad -->
+
+  <div
+    data-aos="fade-right"
+    data-aos-offset="150"
+    data-aos-easing="ease-in-sine"
+    class="z-20 flex justify-center items-center flex-col sm:flex-row gap-10 sm:gap-20 px-4"
+  >
+    <div class="flex w-full sm:w-72 justify-center items-center gap-6">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        class="bi bi-geo-alt-fill text-cyan-500 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-full lg:h-full xl:w-full xl:h-full"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+        ></path>
+      </svg>
+
+      <p class="text-lg text-center sm:text-left">
+        3992 Av. America num. de oficina #212 Cochabamba, Bolivia
+      </p>
+    </div>
+    <div class="w-full sm:w-96 text-center sm:text-left">
+      <h1 class="text-cyan-400 text-3xl font-bold mb-4">OUR LOCATION</h1>
+      <p class="text-xl">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+        nesciunt numquam suscipit eum harum facilis ullam sunt doloribus
+        corrupti consequatur! Cum cumque iste unde quibusdam voluptates, tenetur
+        blanditiis! Delectus, cum.
+      </p>
+    </div>
+  </div>
+</main>
+
+<style>
+  main {
+    background-image: url("public/Captura de pantalla 2025-01-29 121735.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Responsiveness */
+  @media (max-width: 767px) {
+    main {
+      height: auto; /* Ajustamos la altura en pantallas pequeñas */
+    }
+    .flex {
+      flex-direction: column;
+    }
+    .w-full {
+      width: 100%;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
+</style>

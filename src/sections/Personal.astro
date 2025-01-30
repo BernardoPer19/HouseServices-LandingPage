@@ -1,0 +1,41 @@
+---
+import PersonalCard from "../components/PersonalCard.astro";
+---
+
+<main class="container m-auto h-[80vh]" id="Contact">
+    <h1 class="text-center p-10 text-3xl font-bold">Our Personal</h1>
+  <div class=" flex justify-center items-center gap-8 mt-14">
+    <PersonalCard
+      img="https://media.istockphoto.com/id/1476170969/es/foto/retrato-de-un-joven-listo-para-el-trabajo-concepto-de-negocio.jpg?s=612x612&w=0&k=20&c=AAuUZOmmNYo6hzDYNR7d88Ihnxo4jrypqVJa-B8vjys="
+      name="John Doe"
+      role="Senior Designer"
+      experience={5}
+      studies="Bachelor in Architecture"
+      data_aos="fade-up"
+      data_aos_offset="100"
+      data_aos_easing="ease-in-sine"
+    />
+
+    <PersonalCard
+      img="https://img.freepik.com/foto-gratis/angulo-mujer-negocios-posar-armamentos-cruzaron-aire-libre_23-2148767034.jpg"
+      name="Jane Smith"
+      role="Project Manager"
+      experience={8}
+      studies="Master in Project Management"
+      data_aos="fade-up"
+      data_aos_offset="200"
+      data_aos_easing="ease-in-sine"
+    />
+
+    <PersonalCard
+      img="https://www.shutterstock.com/image-photo/confident-middle-aged-business-man-260nw-2516789501.jpg"
+      name="Mark Johnson"
+      role="Marketing Specialist"
+      experience={13}
+      studies="Bachelor in Marketing"
+      data_aos="fade-up"
+      data_aos_offset="300"
+      data_aos_easing="ease-in-sine"
+    />
+  </div>
+</main>

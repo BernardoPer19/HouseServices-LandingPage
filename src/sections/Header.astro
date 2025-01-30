@@ -1,0 +1,64 @@
+---
+import FormHeader from "../components/FormHeader.astro";
+import { formatDate } from "../utils/FormatDate";
+---
+
+<header
+  id="Header"
+  class="relative h-screen flex items-center justify-center text-white"
+>
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+  <main
+    class="flex flex-wrap gap-6 sm:gap-8 md:gap-12 z-20 justify-center items-center"
+  >
+    <div
+      class="w-full md:w-96 flex flex-col gap-4 sm:gap-6 md:gap-12 px-4 md:px-0"
+    >
+      <div
+        class="mb-6 md:text-start"
+        data-aos="fade-right"
+        data-aos-offset="600"
+        data-aos-easing="ease-in-sine"
+      >
+        <h1
+          class="text-cyan-500 text-4xl sm:text-5xl font-bold text-center md:text-left"
+        >
+          ALLHOUSR
+        </h1>
+        <p class="text-center sm:text-xl font-semibold md:text-left">
+          REAL STATE
+        </p>
+      </div>
+      <h1
+        class="text-3xl sm:text-4xl md:text-5xl font-bold text-center md:text-left"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        AN ATTENTION GRABBING HEADLINE WITH ONE STRONG IDEA
+      </h1>
+      <div
+        class="text-center md:text-start"
+        data-aos="fade-right"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine"
+      >
+        <h3 class="text-lg sm:text-xl font-semibold">Your Next Open House</h3>
+        <h3 class="text-lg sm:text-xl font-semibold text-cyan-500">
+          {formatDate()} - 9:00AM - 21:00PM
+        </h3>
+      </div>
+    </div>
+    <FormHeader />
+  </main>
+</header>
+
+<style>
+  header {
+    background-image: url("https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+</style>

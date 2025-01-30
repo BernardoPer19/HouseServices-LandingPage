@@ -1,0 +1,25 @@
+---
+const bannerImage =
+  "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+---
+
+<div
+  class="relative h-[50vh] flex items-center justify-center text-white bg-cover bg-center"
+  style={`background-image: url(${bannerImage}); background-attachment: fixed;`}
+>
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <!-- Capa oscura para contraste -->
+  <div
+    class="relative z-10 text-center"
+    data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine"
+  >
+    <h1 class="text-4xl font-bold mb-4">So, what are you waiting for?</h1>
+    <button
+      class="px-6 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-all"
+    >
+      Request Showing
+    </button>
+  </div>
+</div>

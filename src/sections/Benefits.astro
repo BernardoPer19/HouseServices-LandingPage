@@ -1,0 +1,79 @@
+---
+import CardBefefits from "../components/CardBefefits.astro";
+
+interface BenefitProps {
+  text: string;
+  img: string;
+  title: string;
+}
+---
+
+<main
+  id="Benefints"
+  class="max-w-7xl mx-auto px-4 mt-24 h-[80vh] flex flex-col justify-center items-center"
+>
+  <h1 class="text-4xl font-bold text-center text-cyan-500 mb-12">
+    Benefits of Choosing Our Home Decor Solutions
+  </h1>
+
+  <div
+    class="flex flex-wrap gap-16 justify-center items-center"
+   
+  >
+    <CardBefefits
+      img={"https://images.pexels.com/photos/4207785/pexels-photo-4207785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
+      text={"Transform your home with unique pieces that combine style and functionality. Find the perfect decor to give every space that special touch."}
+      title={"Personalized Decoration"}
+      data_aos="fade-up"
+      data_aos_offset="100"
+      data_aos_easing="ease-in-sine"
+    />
+
+    <CardBefefits
+      img={"https://images.pexels.com/photos/8903361/pexels-photo-8903361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
+      text={"We offer interior design consultancy to make every corner of your home reflect your personal style. Turn your space into something unique!"}
+      title={"Design Consultancy"}
+      data_aos="fade-up"
+      data_aos_offset="200"
+      data_aos_easing="ease-in-sine"
+    />
+
+    <CardBefefits
+      img={"https://images.pexels.com/photos/3767442/pexels-photo-3767442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
+      text={"Discover an exclusive selection of accessories to bring your home to life. From furniture to decorative details that make a difference."}
+      title={"Home Accessories"}
+      data_aos="fade-up"
+      data_aos_offset="300"
+      data_aos_easing="ease-in-sine"
+    />
+  </div>
+</main>
+
+<style>
+  /* Adjusts the layout for smaller screens */
+  @media (max-width: 767px) {
+    main {
+      padding: 0 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .flex {
+      flex-direction: column;
+      gap: 24px; /* Increased gap */
+    }
+  }
+
+  /* Adjusts the layout for medium screens */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+    .flex {
+      flex-wrap: wrap;
+      gap: 32px; /* Increased gap */
+    }
+  }
+</style>
